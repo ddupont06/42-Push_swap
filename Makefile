@@ -58,9 +58,9 @@ $(BONUS_NAME): 	$(OBJS_BONUS)
 
 norminette:
 		@if norminette $(SRCS) $(BONUS_SRCS) $(INCS) > /dev/null; then \
-        		echo "$(shell tput setaf 190)Norminette: $(shell tput setaf 46)[OK]$(shell tput sgr0)"; \
+			echo "$(shell tput setaf 190)Norminette: $(shell tput setaf 46)[OK]$(shell tput sgr0)"; \
 		else \
-        		echo "$(shell tput setaf 190)Norminette: $(shell tput setaf 196)[KO]$(shell tput sgr0)"; \
+			echo "$(shell tput setaf 190)Norminette: $(shell tput setaf 196)[KO]$(shell tput sgr0)"; \
 		fi
 		@sleep 0.2
 
